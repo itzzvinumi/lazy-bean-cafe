@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Bean</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <img src="2.png" alt="Lazy Bean Logo" class="logo">
+            <h1>The Lazy Bean</h1>
+            <p>Slow down, sip slow, and relax.</p>
+        </div>
+
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About Us</a>
+            <a href="#hours">Opening Hours</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="main-content">
+
+            <section id="home">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80" alt="Lazy Bean Cafe Atmosphere" class="hero-img">
+            </section>
+
+            <section id="menu">
+                <h2>Our Menu Specials</h2>
+                <div class="menu-gallery">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=500&q=80" alt="Artisanal Latte">
+                        <h3>Artisanal Latte</h3>
+                        <p>LKR 1,200</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Butter Croissant">
+                        <h3>Butter Croissant</h3>
+                        <p>LKR 850</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=500&q=80" alt="Avocado Toast">
+                        <h3>Avocado Toast</h3>
+                        <p>LKR 1,850</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=500&q=80" alt="Berry Pancakes">
+                        <h3>Berry Pancakes</h3>
+                        <p>LKR 2,200</p>
+                    </div>
+                </div>
+
+                <div class="calculator-box">
+                    <h3>Quick Coffee Price Calculator</h3>
+                    <label for="quantity">Number of Coffees (LKR 1,200 each):</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button onclick="calculateTotal()">Calculate Total</button>
+                    <p id="total-price"></p>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>Why Visit The Lazy Bean?</h2>
+                <ul>
+                    <li>100% ethically sourced, premium coffee beans.</li>
+                    <li>Fresh pastries baked in-house every morning.</li>
+                    <li>Free high-speed Wi-Fi and cozy reading corners.</li>
+                    <li>Pet-friendly outdoor patio seating.</li>
+                </ul>
+            </section>
+
+            <section id="hours">
+                <h2>Opening Hours & Daily Specials</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Daily Special</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Wednesday</td>
+                            <td>7:00 AM - 6:00 PM</td>
+                            <td>Buy 1 Coffee, Get 50% Off Any Pastry</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday - Friday</td>
+                            <td>7:00 AM - 8:00 PM</td>
+                            <td>Free Refill on Filter Coffee</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>8:00 AM - 5:00 PM</td>
+                            <td>Weekend Brunch Combo (LKR 3,200)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </div>
+
+        <div class="footer" id="contact">
+            <h3>Contact Us</h3>
+            <p>📍 Address: 123 Flower Road, Colombo 07, Sri Lanka</p>
+            <p>📞 Phone: +94 11 234 5678</p>
+            <p>✉️ Email: hello@thelazybean.lk</p>
+            <br>
+            <p>&copy; 2026 The Lazy Bean Café.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
